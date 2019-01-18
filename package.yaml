@@ -24,6 +24,9 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+    - aeson
+    - bytestring
 
 executables:
   DinnersShoppingList-exe:
@@ -35,8 +38,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - DinnersShoppingList
-    - bytestring
-    - aeson
 
 tests:
   DinnersShoppingList-test:
