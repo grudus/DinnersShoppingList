@@ -3,7 +3,7 @@
 , DeriveGeneric
 #-}
 
-module DinnerDomain (Ingredient(Ingredient), Dinner(Dinner)) where
+module DinnerDomain (Ingredient(Ingredient), Dinner(Dinner), meal, name) where
 
 import Data.Aeson
 import GHC.Generics
