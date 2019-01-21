@@ -1,12 +1,18 @@
 {-# LANGUAGE FlexibleInstances #-}
 
-module Console (log, read) where
+module Console
+    ( log
+    , read
+    )
+where
 
-import Prelude hiding (log, read)
+import           Prelude                 hiding ( log
+                                                , read
+                                                )
 
 
 class Logger a where
-    printToLog :: a -> IO () 
+    printToLog :: a -> IO ()
 
 instance  Logger String where
     printToLog = putStrLn

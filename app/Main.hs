@@ -1,13 +1,14 @@
 
 module Main where
 
-import JsonFileDinnerReader
-import UserInterfaceLoop
-import DinnerDomain
+import           JsonFileDinnerReader
+import           UserInterfaceLoop
+import           DinnerDomain
 
-main ::  IO ()
+main :: IO ()
 main = do
-  eitherDinners <- parseFromJsonFile "res/dinners.json" :: IO (Either String [Dinner])
+  eitherDinners <-
+    parseFromJsonFile "res/dinners.json" :: IO (Either String [Dinner])
   case eitherDinners of
-    Left error -> putStrLn $ "Error while reading json file: " ++ error
+    Left  error   -> putStrLn $ "Error while reading json file: " ++ error
     Right dinners -> mainLoop dinners
