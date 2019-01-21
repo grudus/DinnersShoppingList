@@ -15,8 +15,13 @@ mainLoop dinners = do
     Console.log "\nPodaj listę posiłków (oddzielonych spacją - np. 1 4 2), z których chcesz stworzyć listę zakupów:"
     userInput <- Console.read
 
-    Console.log "\nPodałeś:"
-    mapM_ (Console.log . meal) $ findDinnersSelectedByUser userInput dinners
+    let selectedDinners = findDinnersSelectedByUser userInput dinners
+        in do
+        Console.log "\nPodałeś:"
+        mapM_ (Console.log . meal) selectedDinners
+        Console.log "\nNiezbędne składniki:"
+        mapM_ (Console.log . name) $ sumDuplicatedIngredients selectedDinners
+
 
 
 logKnownMeals :: [Dinner] -> IO ()

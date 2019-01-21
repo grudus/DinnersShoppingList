@@ -57,3 +57,23 @@ spec = do
 
         it "Should return it correctly" $
             getIngrediensNames (last dinners) `shouldBe` ["Łabądź", "Ogórek"]
+    
+    describe "Reducing to sum duplicated ingredients" $ do
+        it "Should return empty list for empty list" $
+            sumDuplicatedIngredients [] `shouldBe` []
+        
+        it "Should reteurn empty list for dinner without integredients" $
+            sumDuplicatedIngredients [Dinner "meal" []] `shouldBe` []
+        
+        it "Should sum duplicated elements" $ do
+            aAmount `shouldBe` 4.5
+            bAmount `shouldBe` 2.0
+            length ingredients `shouldBe` 2
+            where
+                ingredients = sumDuplicatedIngredients [Dinner "meal1" [Ingredient "a" 1.0 "kg", Ingredient "b" 2.0 "kg"], Dinner "meal2" [Ingredient "a" 3.5 "kg"]]
+                getAmount (Ingredient _ am _) = am
+                aAmount = getAmount $ head ingredients
+                bAmount = getAmount $ last ingredients 
+                    
+
+                    
