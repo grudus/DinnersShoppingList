@@ -53,6 +53,6 @@ sumDuplicatedIngredients []      = []
 sumDuplicatedIngredients dinners = List.map sumIngredients
     $ List.group sortedIngredients
   where
+    sumIngredients = foldl1 add
     sortedIngredients =
         List.sort . concatMap (\(Dinner _ ingrediens) -> ingrediens) $ dinners
-    sumIngredients = foldl1 add

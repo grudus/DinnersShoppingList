@@ -20,7 +20,7 @@ mainLoop dinners = do
         Console.log "\nPodałeś:"
         mapM_ (Console.log . meal) selectedDinners
         Console.log "\nNiezbędne składniki:"
-        mapM_ (Console.log . name) $ sumDuplicatedIngredients selectedDinners
+        mapM_ (Console.log . detailedInfo) $ sumDuplicatedIngredients selectedDinners
 
 
 

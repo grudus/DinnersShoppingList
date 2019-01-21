@@ -2,22 +2,47 @@
     {
         "meal": "Tortilla",
         "ingrediens": [
-            {"name": "Ogórek", "amount": 1, "unit": "item"},
-            {"name": "Wrapy", "amount": 1, "unit": "pack"},
-            {"name": "Pomidor", "amount": 1, "unit": "item"},
+            {"name": "Ogórek", "amount": 1, "unit": "szt"},
+            {"name": "Wrapy", "amount": 1, "unit": "pcz"},
+            {"name": "Pomidor", "amount": 1, "unit": "szt"},
             {"name": "Kurczak", "amount": 0.5, "unit": "kg"},
-            {"name": "Czosnek", "amount": 0.5, "unit": "item"},
-            {"name": "Jogurt duzy", "amount": 1, "unit": "item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "pack"}
+            {"name": "Czosnek", "amount": 0.5, "unit": "szt"},
+            {"name": "Jogurt duzy", "amount": 1, "unit": "szt"},
+            {"name": "Majonez", "amount": 0.1, "unit": "pcz"}
         ]
     },
     {
         "meal": "Pałki",
         "ingrediens": [
             {"name": "Pałki", "amount": 1, "unit": "kg"},
-            {"name": "Czosnek", "amount": 0.5, "unit": "item"},
-            {"name": "Jogurt duzy", "amount": 1, "unit": "item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "pack"}
+            {"name": "Czosnek", "amount": 0.5, "unit": "szt"},
+            {"name": "Jogurt duzy", "amount": 1, "unit": "szt"},
+            {"name": "Majonez", "amount": 0.1, "unit": "pcz"}
+        ]
+    },
+    {
+        "meal": "Kesadijka",
+        "ingrediens": [
+            {"name": "Wrapy", "amount": 1, "unit": "pcz"},
+            {"name": "Papryka", "amount": 3, "unit": "szt"},
+            {"name": "Papryczka ostra", "amount": 0.2, "unit": "pcz"},
+            {"name": "Pomidor", "amount": 2, "unit": "szt"},
+            {"name": "Cebula", "amount": 1, "unit": "szt"},
+            {"name": "Kurczak", "amount": 0.5, "unit": "kg"},
+            {"name": "Czosnek", "amount": 0.5, "unit": "szt"},
+            {"name": "Jogurt duzy", "amount": 1, "unit": "szt"},
+            {"name": "Majonez", "amount": 0.1, "unit": "pcz"}
+        ]
+    },
+    {
+        "meal": "Sałatka po grecku",
+        "ingrediens": [
+            {"name": "Sałata", "amount": 1, "unit": "szt"},
+            {"name": "Pomidor", "amount": 1, "unit": "szt"},
+            {"name": "Ogórek", "amount": 1, "unit": "szt"},
+            {"name": "Sosik do sałatki", "amount": 1, "unit": "szt"},
+            {"name": "Bagietka", "amount": 2, "unit": "szt"},
+            {"name": "Kurczak", "amount": 0.5, "unit": "kg"}
         ]
     }
 ]
