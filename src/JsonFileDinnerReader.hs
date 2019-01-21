@@ -6,5 +6,6 @@ import Data.Aeson
 
 
 parseFromJsonFile :: FromJSON a => FilePath -> IO (Either String a)
-parseFromJsonFile path =
-    (eitherDecode <$> (readFile' path))
+parseFromJsonFile path = do
+    json <- readFile' path
+    return $ eitherDecode json

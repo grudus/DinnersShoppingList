@@ -2,10 +2,19 @@
     {
         "meal": "Tortilla",
         "ingrediens": [
+            {"name": "Ogórek", "amount": 1, "unit": "item"},
             {"name": "Wrapy", "amount": 1, "unit": "pack"},
             {"name": "Pomidor", "amount": 1, "unit": "item"},
-            {"name": "Ogórek", "amount": 1, "unit": "item"},
             {"name": "Kurczak", "amount": 0.5, "unit": "kg"},
+            {"name": "Czosnek", "amount": 0.5, "unit": "item"},
+            {"name": "Jogurt duzy", "amount": 1, "unit": "item"},
+            {"name": "Majonez", "amount": 0.1, "unit": "pack"}
+        ]
+    },
+    {
+        "meal": "Pałki",
+        "ingrediens": [
+            {"name": "Pałki", "amount": 1, "unit": "kg"},
             {"name": "Czosnek", "amount": 0.5, "unit": "item"},
             {"name": "Jogurt duzy", "amount": 1, "unit": "item"},
             {"name": "Majonez", "amount": 0.1, "unit": "pack"}

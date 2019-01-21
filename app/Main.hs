@@ -4,6 +4,7 @@ module Main where
 import JsonFileDinnerReader
 import DinnerDomain
 import DinnerService 
+import qualified ConsoleLogger as Logger
 
 
 main ::  IO ()
@@ -12,5 +13,4 @@ main = do
   case eitherDinners of
     Left error -> putStrLn $ "error: " ++ error
     Right dinners -> do
-      print $ getMeals dinners
-      print $ getIngrediensNames $ head dinners
+      Logger.log . getIngrediensNames . head $ dinners
