@@ -41,6 +41,9 @@ spec = do
         it "Should return filtered list both ids and dinner meal names passed" $
             findDinnersSelectedByUser "Pałki 3" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 "kg"], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 "pack", Ingredient "Ogórek" 3.5 "item"]]
     
+        it "Should return filtered result when prefix of name is fiven" $
+            findDinnersSelectedByUser "Tort Pał kesa" dinners `shouldBe` dinners
+
     describe "Mapping dinners to ordered string list" $ do
         it "Should return empty list for empty dinner list" $
             orderedMeals [] `shouldBe` []

@@ -10,6 +10,7 @@ where
 import qualified Data.List                     as List
 import           DinnerDomain
 import qualified Text.Read                     as Text
+import qualified Data.Char as Char
 
 getMeals :: [Dinner] -> [String]
 getMeals = map meal
@@ -40,7 +41,7 @@ findDinnersSelectedByUser input dinners =
     userInputPredicate (dinner, index) = any
         (\userInput -> case userInput of
             Number a -> index == a
-            Word   a -> meal dinner == a
+            Word   a -> map Char.toLower a `List.isPrefixOf` map Char.toLower (meal dinner)
         )
         parsedUserInput
 

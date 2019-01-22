@@ -13,7 +13,7 @@ mainLoop dinners = do
   Console.log "Znane posiłki :\n"
   logKnownMeals dinners
   Console.log
-    "\nPodaj listę posiłków (oddzielonych spacją - np. 1 4 2), z których chcesz stworzyć listę zakupów:"
+    "\nPodaj listę posiłków (oddzielonych spacją - np. 1 4 2), lub początki nazw potraw (oddzielone spacją - np. Pał Tort Sała) z których chcesz stworzyć listę zakupów:"
   userInput <- Console.read
 
   let selectedDinners = findDinnersSelectedByUser userInput dinners
