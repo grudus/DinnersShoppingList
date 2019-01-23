@@ -6,6 +6,7 @@
 module DinnerDomain
   ( Ingredient(Ingredient)
   , Dinner(Dinner)
+  , Unit(..)
   , meal
   , name
   , add

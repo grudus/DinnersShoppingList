@@ -7,9 +7,9 @@ import DinnerService
 
 
 dinners = [
-    Dinner "Pałki" [Ingredient "Pałki" 1.0 "kg"], 
-    Dinner "Tortilla" [Ingredient "Ogórek" 1.0 "item", Ingredient "Żółtko" 3.0 "item"],
-    Dinner "Kesadija" [Ingredient "Łabądź" 0.1 "pack", Ingredient "Ogórek" 3.5 "item"]
+    Dinner "Pałki" [Ingredient "Pałki" 1.0 Kg], 
+    Dinner "Tortilla" [Ingredient "Ogórek" 1.0 Item, Ingredient "Żółtko" 3.0 Item],
+    Dinner "Kesadija" [Ingredient "Łabądź" 0.1 Pack, Ingredient "Ogórek" 3.5 Item]
     ]
 
 spec = do
@@ -21,7 +21,7 @@ spec = do
             findDinnersSelectedByUser "1 2 3" [] `shouldBe` []
         
         it "Should return filtered list when dinner ids passed" $
-            findDinnersSelectedByUser "3 1" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 "kg"], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 "pack", Ingredient "Ogórek" 3.5 "item"]]
+            findDinnersSelectedByUser "3 1" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 Kg], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 Pack, Ingredient "Ogórek" 3.5 Item]]
 
         it "Should return filtered single element for single user input" $
             findDinnersSelectedByUser "1" dinners `shouldBe` [head dinners]
@@ -33,13 +33,13 @@ spec = do
             findDinnersSelectedByUser "  3  1   2   " dinners `shouldBe` dinners
 
         it "Should return filtered list when dinner meal names passed" $
-            findDinnersSelectedByUser "Pałki Kesadija" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 "kg"], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 "pack", Ingredient "Ogórek" 3.5 "item"]]
+            findDinnersSelectedByUser "Pałki Kesadija" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 Kg], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 Pack, Ingredient "Ogórek" 3.5 Item]]
 
         it "Should return empty list when no valid meal names" $
             findDinnersSelectedByUser "Pałeczki Chleb" dinners `shouldBe` []
 
         it "Should return filtered list both ids and dinner meal names passed" $
-            findDinnersSelectedByUser "Pałki 3" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 "kg"], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 "pack", Ingredient "Ogórek" 3.5 "item"]]
+            findDinnersSelectedByUser "Pałki 3" dinners `shouldBe` [ Dinner "Pałki" [Ingredient "Pałki" 1.0 Kg], Dinner "Kesadija" [Ingredient "Łabądź" 0.1 Pack, Ingredient "Ogórek" 3.5 Item]]
     
         it "Should return filtered result when prefix of name is fiven" $
             findDinnersSelectedByUser "Tort Pał kesa" dinners `shouldBe` dinners
@@ -73,7 +73,7 @@ spec = do
             bAmount `shouldBe` 2.0
             length ingredients `shouldBe` 2
             where
-                ingredients = sumDuplicatedIngredients [Dinner "meal1" [Ingredient "a" 1.0 "kg", Ingredient "b" 2.0 "kg"], Dinner "meal2" [Ingredient "a" 3.5 "kg"]]
+                ingredients = sumDuplicatedIngredients [Dinner "meal1" [Ingredient "a" 1.0 Kg, Ingredient "b" 2.0 Kg], Dinner "meal2" [Ingredient "a" 3.5 Kg]]
                 getAmount (Ingredient _ am _) = am
                 aAmount = getAmount $ head ingredients
                 bAmount = getAmount $ last ingredients 
