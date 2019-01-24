@@ -3,7 +3,7 @@ module DinnerService
     , getIngrediensNames
     , orderedMeals
     , findDinnersSelectedByUser
-    , sumDuplicatedIngredients
+    , findRequiredIngredients
     )
 where
 
@@ -47,9 +47,9 @@ findDinnersSelectedByUser input dinners =
         )
         parsedUserInput
 
-sumDuplicatedIngredients :: [Dinner] -> [Ingredient]
-sumDuplicatedIngredients []      = []
-sumDuplicatedIngredients dinners = List.map sumIngredients
+findRequiredIngredients :: [Dinner] -> [Ingredient]
+findRequiredIngredients []      = []
+findRequiredIngredients dinners = List.map sumIngredients
     $ List.group sortedIngredients
   where
     sumIngredients = foldl1 add
