@@ -13,7 +13,7 @@ mainLoop :: [Dinner] -> [Pricing] -> IO ()
 mainLoop dinners pricings = do
   Console.log "------- Witaj w naszej aplikacji ---------\n"
   Console.log "Znane posiłki :\n"
-  logKnownMeals dinners
+  Console.log $ mealsWithIndex dinners
   Console.log
     "\nPodaj listę posiłków (oddzielonych spacją - np. 1 4 2), lub początki nazw potraw (oddzielone spacją - np. Pał Tort Sała) z których chcesz stworzyć listę zakupów:"
   userInput <- Console.read
@@ -30,10 +30,3 @@ mainLoop dinners pricings = do
   Console.log
     $  "\nPrzewidywana cena: "
     ++ (show $ calculateTotalPrice pricings requiredIngredients)
-
-logKnownMeals :: [Dinner] -> IO ()
-logKnownMeals dinners = Console.log $ orderedMeals dinners
-
-findMaxIngredientNameLength :: [Dinner] -> Int
-findMaxIngredientNameLength =
-  (+ 1) . maximum . map length . concatMap getIngrediensNames

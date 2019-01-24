@@ -1,7 +1,7 @@
 module Utils
-    ( orderedList
+    ( addIndexPrefixes
     )
 where
 
-orderedList :: [String] -> [String]
-orderedList = map (\(id, item) -> show id ++ ". " ++ item) . zip [1 ..]
+addIndexPrefixes :: [String] -> [String]
+addIndexPrefixes = map (\(id, item) -> show id ++ ". " ++ item) . zip [1 ..]

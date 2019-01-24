@@ -44,15 +44,15 @@ spec = do
         it "Should return filtered result when prefix of name is fiven" $
             findDinnersSelectedByUser "Tort Pał kesa" dinners `shouldBe` dinners
 
-    describe "Mapping dinners to ordered string list" $ do
+    describe "Adding indexes to dinners" $ do
         it "Should return empty list for empty dinner list" $
-            orderedMeals [] `shouldBe` []
+            mealsWithIndex [] `shouldBe` []
 
         it "Should return single element for one-element dinners list" $
-            orderedMeals [head dinners] `shouldBe` ["1. Pałki"]
+            mealsWithIndex [head dinners] `shouldBe` ["1. Pałki"]
 
         it "Should render ordered list properly" $
-            orderedMeals dinners `shouldBe` ["1. Pałki", "2. Tortilla", "3. Kesadija"]
+            mealsWithIndex dinners `shouldBe` ["1. Pałki", "2. Tortilla", "3. Kesadija"]
         
     describe "Getting list of ingredient names" $ do
         it "Should return empty list for dinner with no ingrediens" $
