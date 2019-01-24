@@ -1,7 +1,7 @@
 
 module Main where
 
-import           JsonFileDinnerReader
+import           JsonFileReader
 import           UserInterfaceLoop
 import           DinnerDomain
 import           PricingDomain

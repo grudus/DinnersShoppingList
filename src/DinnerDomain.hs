@@ -40,9 +40,9 @@ unitString (Kg  ) = "kg"
 unitString (Pack) = "paczk"
 unitString (Item) = "szt"
 
-detailedInfo :: Int -> Ingredient -> String
-detailedInfo maxMealLength (Ingredient name amount unit) = Printf.printf
-  ("%-" ++ (show maxMealLength) ++ "s | %.1f %s")
+detailedInfo :: Ingredient -> Int -> String
+detailedInfo (Ingredient name amount unit) nameColumnLength = Printf.printf
+  ("%-" ++ (show nameColumnLength) ++ "s | %.1f %s")
   name
   amount
   (unitString unit)

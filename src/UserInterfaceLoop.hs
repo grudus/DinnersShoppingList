@@ -19,17 +19,17 @@ mainLoop dinners pricings = do
   userInput <- Console.read
 
   let selectedDinners     = findDinnersSelectedByUser userInput dinners
-      maxMealLength       = findMaxIngredientNameLength selectedDinners
+      maxNameLength       = findMaxIngredientNameLength selectedDinners
       requiredIngredients = findRequiredIngredients selectedDinners
 
   Console.log "\nWybrane posiłki:"
   mapM_ (Console.log . meal) selectedDinners
   Console.log "\nNiezbędne składniki:"
-  mapM_ (Console.log . (detailedInfo maxMealLength)) requiredIngredients
+  mapM_ (Console.log . flip detailedInfo maxNameLength) requiredIngredients
 
   Console.log
     $  "\nPrzewidywana cena: "
-    ++ (show $ findPricingsForIngredients pricings requiredIngredients)
+    ++ (show $ calculateTotalPrice pricings requiredIngredients)
 
 logKnownMeals :: [Dinner] -> IO ()
 logKnownMeals dinners = Console.log $ orderedMeals dinners

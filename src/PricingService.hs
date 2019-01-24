@@ -1,5 +1,5 @@
 module PricingService
-    ( findPricingsForIngredients
+    ( calculateTotalPrice
     )
 where
 
@@ -8,18 +8,18 @@ import           PricingDomain
 import qualified Data.List                     as List
 import qualified Data.Maybe                    as May
 
-findPricingsForIngredients :: [Pricing] -> [Ingredient] -> Double
-findPricingsForIngredients pricings ingredients = sum
+calculateTotalPrice :: [Pricing] -> [Ingredient] -> Double
+calculateTotalPrice pricings ingredients = sum
     [ x * amount | (Ingredient _ amount _, Just x) <- menu ]
   where
+    menu :: [MenuItem]
     menu = zip ingredients $ map findPrice ingredients
-    findPrice (Ingredient iname _ iunit) =
-        price
-            <$> List.find
-                    (\(Pricing pname _ punit) ->
-                        pname == iname && punit == iunit
-                    )
-                    pricings
+    
+    findPrice ingredient =
+        price <$> List.find (equalPricing ingredient) pricings
+
+    equalPricing (Ingredient iname _ iunit) (Pricing pname _ punit) =
+        pname == iname && punit == iunit
 
 
 type MenuItem = (Ingredient, Maybe Double)

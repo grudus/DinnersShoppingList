@@ -1,14 +1,14 @@
-module JsonFileDinnerReader
+module JsonFileReader
     ( parseFromJsonFile
     )
 where
 
 import           DinnerDomain
-import           FileReader
 import           Data.Aeson
+import qualified Data.ByteString.Lazy          as L
 
 
 parseFromJsonFile :: FromJSON a => FilePath -> IO (Either String a)
 parseFromJsonFile path = do
-    json <- readFile' path
-    return $ eitherDecode json
+    jsonFileContent <- L.readFile path
+    return $ eitherDecode jsonFileContent

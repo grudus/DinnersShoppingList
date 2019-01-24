@@ -1,9 +1,9 @@
 name:                DinnersShoppingList
 version:             0.1.0.0
-github:              "githubuser/DinnersShoppingList"
+github:              "grudus/DinnersShoppingList"
 license:             MIT
 author:              "grudus"
-maintainer:          "d3wnull@gmail.com"
+maintainer:          "dupa@dupa.com"
 copyright:           "2019 grudus"
 
 extra-source-files:
