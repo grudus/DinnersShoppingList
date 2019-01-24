@@ -2,121 +2,416 @@
     {
         "meal": "Tortilla",
         "ingrediens": [
-            {"name": "Ogórek", "amount": 1, "unit": "Item"},
-            {"name": "Wrapy", "amount": 1, "unit": "Pack"},
-            {"name": "Pomidor", "amount": 1, "unit": "Item"},
-            {"name": "Kurczak", "amount": 0.5, "unit": "Kg"},
-            {"name": "Czosnek", "amount": 0.5, "unit": "Item"},
-            {"name": "Jogurt duzy", "amount": 1, "unit": "Item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "Pack"},
-            {"name": "Picz", "amount": 1, "unit": "Item"}
+            {
+                "name": "Ogórek",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Wrapy",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Pomidor",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Kurczak",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Czosnek",
+                "amount": 0.5,
+                "unit": "Item"
+            },
+            {
+                "name": "Jogurt duzy",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Majonez",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Picz",
+                "amount": 1,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Pałki",
         "ingrediens": [
-            {"name": "Pałki", "amount": 1, "unit": "Kg"},
-            {"name": "Czosnek", "amount": 0.5, "unit": "Item"},
-            {"name": "Jogurt duzy", "amount": 1, "unit": "Item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "Pack"},
-            {"name": "Picz", "amount": 1, "unit": "Item"}
+            {
+                "name": "Pałki",
+                "amount": 1,
+                "unit": "Kg"
+            },
+            {
+                "name": "Czosnek",
+                "amount": 0.5,
+                "unit": "Item"
+            },
+            {
+                "name": "Jogurt duzy",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Majonez",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Picz",
+                "amount": 1,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Kesadijka",
         "ingrediens": [
-            {"name": "Wrapy", "amount": 1, "unit": "Pack"},
-            {"name": "Papryka", "amount": 3, "unit": "Item"},
-            {"name": "Papryczka ostra", "amount": 0.2, "unit": "Pack"},
-            {"name": "Pomidor", "amount": 2, "unit": "Item"},
-            {"name": "Cebula", "amount": 1, "unit": "Item"},
-            {"name": "Kurczak", "amount": 0.5, "unit": "Kg"},
-            {"name": "Czosnek", "amount": 0.5, "unit": "Item"},
-            {"name": "Jogurt duzy", "amount": 1, "unit": "Item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "Pack"},
-            {"name": "Picz", "amount": 1, "unit": "Item"}
+            {
+                "name": "Wrapy",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Papryka",
+                "amount": 3,
+                "unit": "Item"
+            },
+            {
+                "name": "Papryczka ostra",
+                "amount": 0.2,
+                "unit": "Pack"
+            },
+            {
+                "name": "Pomidor",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Cebula",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Kurczak",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Czosnek",
+                "amount": 0.5,
+                "unit": "Item"
+            },
+            {
+                "name": "Jogurt duzy",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Majonez",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Picz",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Ser",
+                "amount": 0.3,
+                "unit": "Kg"
+            }
         ]
     },
     {
         "meal": "Sałatka po grecku",
         "ingrediens": [
-            {"name": "Sałata", "amount": 1, "unit": "Item"},
-            {"name": "Pomidor", "amount": 1, "unit": "Item"},
-            {"name": "Ogórek", "amount": 1, "unit": "Item"},
-            {"name": "Sosik do sałatki", "amount": 1, "unit": "Item"},
-            {"name": "Bagietka", "amount": 2, "unit": "Item"},
-            {"name": "Kurczak", "amount": 0.5, "unit": "Kg"}
+            {
+                "name": "Sałata",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Pomidor",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Ogórek",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Sosik do sałatki",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Bagietka",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Kurczak",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Feta",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Pieczywo",
+                "amount": 2,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Biała kiełbasa",
         "ingrediens": [
-            {"name": "Biała kiełbasa", "amount": 5, "unit": "Item"},
-            {"name": "Cebula", "amount": 1, "unit": "Item"},
-            {"name": "Chleb", "amount": 0.2, "unit": "Pack"}
+            {
+                "name": "Biała kiełbasa",
+                "amount": 5,
+                "unit": "Item"
+            },
+            {
+                "name": "Cebula",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Chleb",
+                "amount": 0.2,
+                "unit": "Pack"
+            }
         ]
     },
     {
         "meal": "Shoarma",
         "ingrediens": [
-            {"name": "Frytki", "amount": 0.5, "unit": "Pack"},
-            {"name": "Kurczak", "amount": 0.5, "unit": "Kg"},
-            {"name": "Jabłko", "amount": 1, "unit": "Item"},
-            {"name": "Marchewka", "amount": 1, "unit": "Item"},
-            {"name": "Kapusta", "amount": 1, "unit": "Item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "Pack"},
-            {"name": "Picz", "amount": 1, "unit": "Item"}
+            {
+                "name": "Frytki",
+                "amount": 0.5,
+                "unit": "Pack"
+            },
+            {
+                "name": "Kurczak",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Jabłko",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Marchew",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Kapusta",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Majonez",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Picz",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Cebula",
+                "amount": 1,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Schabowy",
         "ingrediens": [
-            {"name": "Ziemniaki", "amount": 1, "unit": "Kg"},
-            {"name": "Wieprzowina", "amount": 0.5, "unit": "Kg"},
-            {"name": "Marchew", "amount": 2, "unit": "Item"},
-            {"name": "Bułka tarta", "amount": 0.1, "unit": "Pack"},
-            {"name": "Jajko", "amount": 0.1, "unit": "Pack"}
+            {
+                "name": "Ziemniaki",
+                "amount": 1,
+                "unit": "Kg"
+            },
+            {
+                "name": "Wieprzowina",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Marchew",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Bułka tarta",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Jajko",
+                "amount": 0.1,
+                "unit": "Pack"
+            }
         ]
     },
     {
         "meal": "Spaghetti",
         "ingrediens": [
-            {"name": "Makaron spaghetti", "amount": 1, "unit": "Pack"},
-            {"name": "Mięso mielone", "amount": 0.5, "unit": "Kg"},
-            {"name": "Papryczki ostre", "amount": 0.1, "unit": "Pack"},
-            {"name": "Koncentrat pomidorowy", "amount": 0.3, "unit": "Pack"},
-            {"name": "Cebula", "amount": 1, "unit": "Item"},
-            {"name": "Czosnek", "amount": 0.3, "unit": "Item"}
+            {
+                "name": "Makaron spaghetti",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Mięso mielone",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Papryczka ostra",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Koncentrat pomidorowy",
+                "amount": 0.3,
+                "unit": "Pack"
+            },
+            {
+                "name": "Cebula",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Czosnek",
+                "amount": 0.3,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Ćwiartka kurczaka",
         "ingrediens": [
-            {"name": "Ziemniaki", "amount": 1, "unit": "Kg"},
-            {"name": "Udka", "amount": 2, "unit": "Item"},
-            {"name": "Śmietana", "amount": 1, "unit": "Item"},
-            {"name": "Ogórek", "amount": 1, "unit": "Item"}
+            {
+                "name": "Ziemniaki",
+                "amount": 1,
+                "unit": "Kg"
+            },
+            {
+                "name": "Udka",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Śmietana",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Ogórek",
+                "amount": 1,
+                "unit": "Item"
+            }
         ]
     },
     {
         "meal": "Zapiekanka makaronowa",
         "ingrediens": [
-            {"name": "Makaron", "amount": 1, "unit": "Pack"},
-            {"name": "Sosik do zapiekanki", "amount": 1, "unit": "Item"},
-            {"name": "???", "amount": 1, "unit": "Item"}
+            {
+                "name": "Makaron",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Sosik do zapiekanki",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Śmietana",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Szynka",
+                "amount": 0.75,
+                "unit": "Pack"
+            },
+            {
+                "name": "Ser",
+                "amount": 0.15,
+                "unit": "Kg"
+            }
         ]
     },
     {
         "meal": "Faszerowana papryka",
         "ingrediens": [
-            {"name": "Mięso mielone", "amount": 0.5, "unit": "Kg"},
-            {"name": "Papryka", "amount": 3, "unit": "Item"},
-            {"name": "Papryczka ostra", "amount": 0.2, "unit": "Pack"},
-            {"name": "Chleb", "amount": 0.2, "unit": "Pack"},
-            {"name": "Jogurt mały", "amount": 1, "unit": "Item"},
-            {"name": "Majonez", "amount": 0.1, "unit": "Pack"},
-            {"name": "Picz", "amount": 1, "unit": "Item"},
-            {"name": "Czosnek", "amount": 0.3, "unit": "Item"}
+            {
+                "name": "Mięso mielone",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Papryka",
+                "amount": 3,
+                "unit": "Item"
+            },
+            {
+                "name": "Papryczka ostra",
+                "amount": 0.2,
+                "unit": "Pack"
+            },
+            {
+                "name": "Chleb",
+                "amount": 0.2,
+                "unit": "Pack"
+            },
+            {
+                "name": "Jogurt mały",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Majonez",
+                "amount": 0.1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Picz",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Czosnek",
+                "amount": 0.3,
+                "unit": "Item"
+            },
+            {
+                "name": "Cebula",
+                "amount": 1,
+                "unit": "Item"
+            }
         ]
     }
 ]

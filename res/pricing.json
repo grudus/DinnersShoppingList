@@ -1,18 +1,68 @@
 [
     {
-        "name": "Ogórek",
-        "price": 1,
+        "name": "Czosnek",
+        "price": 2,
         "unit": "Item"
     },
     {
-        "name": "Wrapy",
-        "price": 4.5,
+        "name": "Bagietka",
+        "price": 2.0,
+        "unit": "Item"
+    },
+    {
+        "name": "Biała kiełbasa",
+        "price": 1.0,
+        "unit": "Item"
+    },
+    {
+        "name": "Cebula",
+        "price": 0.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Chleb",
+        "price": 3.5,
         "unit": "Pack"
     },
     {
-        "name": "Pomidor",
-        "price": 1,
+        "name": "Feta",
+        "price": 5,
         "unit": "Item"
+    },
+    {
+        "name": "Frytki",
+        "price": 5,
+        "unit": "Pack"
+    },
+    {
+        "name": "Jabłko",
+        "price": 0.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Jajko",
+        "price": 8,
+        "unit": "Pack"
+    },
+    {
+        "name": "Jogurt duzy",
+        "price": 3,
+        "unit": "Item"
+    },
+    {
+        "name": "Jogurt mały",
+        "price": 1.2,
+        "unit": "Item"
+    },
+    {
+        "name": "Kapusta",
+        "price": 3.5,
+        "unit": "Item"
+    },
+    {
+        "name": "Koncentrat pomidorowy",
+        "price": 4,
+        "unit": "Pack"
     },
     {
         "name": "Kurczak",
@@ -20,23 +70,113 @@
         "unit": "Kg"
     },
     {
-        "name": "Czosnek",
-        "price": 2,
-        "unit": "Item"
-    },
-    {
-        "name": "Jogurt duzy",
-        "price": 2,
-        "unit": "Item"
-    },
-    {
         "name": "Majonez",
-        "price": 8.5,
+        "price": 7.5,
         "unit": "Pack"
+    },
+    {
+        "name": "Makaron",
+        "price": 3,
+        "unit": "Pack"
+    },
+    {
+        "name": "Makaron spaghetti",
+        "price": 3,
+        "unit": "Pack"
+    },
+    {
+        "name": "Marchew",
+        "price": 1.2,
+        "unit": "Item"
+    },
+    {
+        "name": "Mięso mielone",
+        "price": 10,
+        "unit": "Kg"
+    },
+    {
+        "name": "Ogórek",
+        "price": 0.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Papryczka ostra",
+        "price": 7,
+        "unit": "Pack"
+    },
+    {
+        "name": "Papryka",
+        "price": 2.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Pałki",
+        "price": 7,
+        "unit": "Kg"
     },
     {
         "name": "Picz",
         "price": 3.5,
+        "unit": "Item"
+    },
+    {
+        "name": "Pieczywo",
+        "price": 1,
+        "unit": "Item"
+    },
+    {
+        "name": "Pomidor",
+        "price": 0.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Sałata",
+        "price": 3.5,
+        "unit": "Item"
+    },
+    {
+        "name": "Ser",
+        "price": 30,
+        "unit": "Kg"
+    },
+    {
+        "name": "Sosik do sałatki",
+        "price": 0.8,
+        "unit": "Item"
+    },
+    {
+        "name": "Sosik do zapiekanki",
+        "price": 1.2,
+        "unit": "Item"
+    },
+    {
+        "name": "Szynka",
+        "price": 6,
+        "unit": "Pack"
+    },
+    {
+        "name": "Udka",
+        "price": 2,
+        "unit": "Item"
+    },
+    {
+        "name": "Wieprzowina",
+        "price": 10,
+        "unit": "Kg"
+    },
+    {
+        "name": "Wrapy",
+        "price": 5,
+        "unit": "Pack"
+    },
+    {
+        "name": "Ziemniaki",
+        "price": 1.5,
+        "unit": "Kg"
+    },
+    {
+        "name": "Śmietana",
+        "price": 2.4,
         "unit": "Item"
     }
 ]
