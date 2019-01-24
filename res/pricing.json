@@ -1,7 +1,7 @@
 [
     {
         "name": "Czosnek",
-        "price": 2,
+        "price": 1.5,
         "unit": "Item"
     },
     {
@@ -11,12 +11,12 @@
     },
     {
         "name": "Biała kiełbasa",
-        "price": 1.0,
+        "price": 1.5,
         "unit": "Item"
     },
     {
         "name": "Cebula",
-        "price": 0.8,
+        "price": 0.5,
         "unit": "Item"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
         "name": "Feta",
-        "price": 5,
+        "price": 4,
         "unit": "Item"
     },
     {
@@ -41,17 +41,17 @@
     },
     {
         "name": "Jajko",
-        "price": 8,
+        "price": 7,
         "unit": "Pack"
     },
     {
         "name": "Jogurt duzy",
-        "price": 3,
+        "price": 2.5,
         "unit": "Item"
     },
     {
         "name": "Jogurt mały",
-        "price": 1.2,
+        "price": 1,
         "unit": "Item"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "name": "Koncentrat pomidorowy",
-        "price": 4,
+        "price": 2.5,
         "unit": "Pack"
     },
     {
@@ -86,27 +86,27 @@
     },
     {
         "name": "Marchew",
-        "price": 1.2,
+        "price": 0.5,
         "unit": "Item"
     },
     {
         "name": "Mięso mielone",
-        "price": 10,
+        "price": 14,
         "unit": "Kg"
     },
     {
         "name": "Ogórek",
-        "price": 0.8,
+        "price": 2,
         "unit": "Item"
     },
     {
         "name": "Papryczka ostra",
-        "price": 7,
+        "price": 6,
         "unit": "Pack"
     },
     {
         "name": "Papryka",
-        "price": 2.8,
+        "price": 2.2,
         "unit": "Item"
     },
     {
@@ -126,7 +126,7 @@
     },
     {
         "name": "Pomidor",
-        "price": 0.8,
+        "price": 1.1,
         "unit": "Item"
     },
     {
@@ -141,37 +141,37 @@
     },
     {
         "name": "Sosik do sałatki",
-        "price": 0.8,
+        "price": 1,
         "unit": "Item"
     },
     {
         "name": "Sosik do zapiekanki",
-        "price": 1.2,
+        "price": 2.5,
         "unit": "Item"
     },
     {
         "name": "Szynka",
-        "price": 6,
-        "unit": "Pack"
-    },
-    {
-        "name": "Udka",
-        "price": 2,
-        "unit": "Item"
-    },
-    {
-        "name": "Wieprzowina",
-        "price": 10,
-        "unit": "Kg"
-    },
-    {
-        "name": "Wrapy",
         "price": 5,
         "unit": "Pack"
     },
     {
+        "name": "Udka",
+        "price": 2.5,
+        "unit": "Item"
+    },
+    {
+        "name": "Wieprzowina",
+        "price": 18,
+        "unit": "Kg"
+    },
+    {
+        "name": "Wrapy",
+        "price": 4.5,
+        "unit": "Pack"
+    },
+    {
         "name": "Ziemniaki",
-        "price": 1.5,
+        "price": 2,
         "unit": "Kg"
     },
     {
