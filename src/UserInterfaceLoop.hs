@@ -18,8 +18,8 @@ mainLoop dinners pricings = do
     "\nPodaj listę posiłków (oddzielonych spacją - np. 1 4 2), lub początki nazw potraw (oddzielone spacją - np. Pał Tort Sała) z których chcesz stworzyć listę zakupów:"
   userInput <- Console.read
 
-  let selectedDinners = findDinnersSelectedByUser userInput dinners
-      maxMealLength = findMaxIngredientNameLength selectedDinners
+  let selectedDinners     = findDinnersSelectedByUser userInput dinners
+      maxMealLength       = findMaxIngredientNameLength selectedDinners
       requiredIngredients = findRequiredIngredients selectedDinners
 
   Console.log "\nWybrane posiłki:"
@@ -35,4 +35,5 @@ logKnownMeals :: [Dinner] -> IO ()
 logKnownMeals dinners = Console.log $ orderedMeals dinners
 
 findMaxIngredientNameLength :: [Dinner] -> Int
-findMaxIngredientNameLength = (+ 1) . maximum . map length . concatMap getIngrediensNames
+findMaxIngredientNameLength =
+  (+ 1) . maximum . map length . concatMap getIngrediensNames

@@ -41,8 +41,11 @@ unitString (Pack) = "paczk"
 unitString (Item) = "szt"
 
 detailedInfo :: Int -> Ingredient -> String
-detailedInfo maxMealLength (Ingredient name amount unit) =
-  Printf.printf ("%-" ++ (show maxMealLength) ++ "s | %.1f %s") name amount (unitString unit)
+detailedInfo maxMealLength (Ingredient name amount unit) = Printf.printf
+  ("%-" ++ (show maxMealLength) ++ "s | %.1f %s")
+  name
+  amount
+  (unitString unit)
 
 add :: Ingredient -> Ingredient -> Ingredient
 add acc@(Ingredient name1 amount1 unit1) (Ingredient name2 amount2 unit2) =
