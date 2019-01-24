@@ -259,7 +259,7 @@
             },
             {
                 "name": "Marchew",
-                "amount": 2,
+                "amount": 5,
                 "unit": "Item"
             },
             {
@@ -409,6 +409,87 @@
             },
             {
                 "name": "Cebula",
+                "amount": 1,
+                "unit": "Item"
+            }
+        ]
+    },
+    {
+        "meal": "Hamburger",
+        "ingrediens": [
+            {
+                "name": "Wołowina",
+                "amount": 0.4,
+                "unit": "Kg"
+            },
+            {
+                "name": "Pomidor",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Papryczka ostra",
+                "amount": 0.2,
+                "unit": "Pack"
+            },
+            {
+                "name": "Ogórek",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Cebula",
+                "amount": 2,
+                "unit": "Item"
+            },
+            {
+                "name": "Mix Sałat",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Ser",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Boczek",
+                "amount": 1,
+                "unit": "Pack"
+            },
+            {
+                "name": "Cola",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Rzeczy do bułki",
+                "amount": 1,
+                "unit": "Pack"
+            }
+            
+        ]
+    },
+    {
+        "meal": "Wątróbka",
+        "ingrediens": [
+            {
+                "name": "Cebula",
+                "amount": 3,
+                "unit": "Item"
+            },
+            {
+                "name": "Bagietka",
+                "amount": 1,
+                "unit": "Item"
+            },
+            {
+                "name": "Wątróbka",
+                "amount": 0.5,
+                "unit": "Kg"
+            },
+            {
+                "name": "Riviva",
                 "amount": 1,
                 "unit": "Item"
             }

@@ -178,5 +178,45 @@
         "name": "Śmietana",
         "price": 2.4,
         "unit": "Item"
+    },
+    {
+        "name": "Wołowina",
+        "price": 20,
+        "unit": "Kg"
+    },
+    {
+        "name": "Mix Sałat",
+        "price": 4,
+        "unit": "Pack"
+    },
+    {
+        "name": "Ser",
+        "price": 4,
+        "unit": "Pack"
+    },
+    {
+        "name": "Boczek",
+        "price": 4,
+        "unit": "Pack"
+    },
+    {
+        "name": "Cola",
+        "price": 4,
+        "unit": "Item"
+    },
+    {
+        "name": "Rzeczy do bułki",
+        "price": 5,
+        "unit": "Pack"
+    },
+    {
+        "name": "Wątróbka",
+        "price": 7,
+        "unit": "Kg"
+    },
+    {
+        "name": "Riviva",
+        "price": 2.5,
+        "unit": "Item"
     }
 ]
