@@ -4,11 +4,20 @@ module Main where
 import           JsonFileDinnerReader
 import           UserInterfaceLoop
 import           DinnerDomain
+import           PricingDomain
+
+
+parseDinners :: FilePath -> IO (Either String [Dinner])
+parseDinners = parseFromJsonFile
+
+parsePricing :: FilePath -> IO (Either String [Pricing])
+parsePricing = parseFromJsonFile
 
 main :: IO ()
 main = do
-  eitherDinners <-
-    parseFromJsonFile "res/dinners.json" :: IO (Either String [Dinner])
-  case eitherDinners of
-    Left  error   -> putStrLn $ "Error while reading json file: " ++ error
-    Right dinners -> mainLoop dinners
+  dinnersEither <- parseDinners "res/dinners.json"
+  pricingEither <- parsePricing "res/pricing.json"
+  
+  case (,) <$> dinnersEither <*> pricingEither of
+    Left  error   -> putStrLn $ "Error while json file: " ++ error
+    Right (dinners, pricing) -> mainLoop dinners pricing

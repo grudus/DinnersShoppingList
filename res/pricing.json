@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Ogórek",
+        "price": 1,
+        "unit": "Item"
+    },
+    {
+        "name": "Wrapy",
+        "price": 4.5,
+        "unit": "Pack"
+    },
+    {
+        "name": "Pomidor",
+        "price": 1,
+        "unit": "Item"
+    },
+    {
+        "name": "Kurczak",
+        "price": 16.5,
+        "unit": "Kg"
+    },
+    {
+        "name": "Czosnek",
+        "price": 2,
+        "unit": "Item"
+    },
+    {
+        "name": "Jogurt duzy",
+        "price": 2,
+        "unit": "Item"
+    },
+    {
+        "name": "Majonez",
+        "price": 8.5,
+        "unit": "Pack"
+    },
+    {
+        "name": "Picz",
+        "price": 3.5,
+        "unit": "Item"
+    }
+]
